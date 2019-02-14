@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+
+html {
+	background: url(../img/mars.png) no-repeat bottom right, url(../img/space.jpg) no-repeat center center;
+	background-size: 25em, cover;
+}
+
+main {
+	display: grid;
+	grid-template-areas: "header""section""footer";
+}
+
+header {
+	grid-area: header;
+	width: 100%;
+	padding: 24px;
+	background: #181C1F;
+}
+
+footer {
+	grid-area: footer;
+}
+
+h1 {
+	color: #FFFFFF;
+	float: right;
+	margin: 0;
+}
+
+section {
+	display: grid;
+	grid-area: section;
+	grid-template-areas: "speed""fuel""occupation""time";
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 0px;
+	padding:0px;
+}
+
+#time {
+	grid-area: time;
+	background: #181C1F;
+	color: #FFFFFF;
+	padding: 24px;
+	background: #181C1F;
+}
+
+#speed, #fuel, #occupation {
+	width: 100%;
+	min-height: 300px;
+}
+
+#chart_speed {
+	grid-area: speed;
+	background: #181C1F;
+}
+
+#chart_fuel {
+	grid-area: fuel;
+	background: #181C1F;
+}
+
+#chart_occupation {
+	grid-area: occupation;
+	background: #181C1F;
+}
+
+#occupy-mars{
+	width: 128px;
+	margin: 24px;
+}
+
+#spacex-logo {
+	width: 264px;
+}
+
+@media screen and (min-width: 672px) {
+	section {
+		grid-template-areas: "speed fuel""occupation time";
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 12px;
+		padding: 12px;
+	}
+
+}
+
+@media screen and (min-width: 1400px) {
+	section {
+		grid-template-areas: "speed speed fuel fuel""occupation time time .";
+		grid-template-columns: 4fr 2fr 2fr 4fr;
+		grid-gap: 24px;
+		padding: 24px;
+	}
+}
