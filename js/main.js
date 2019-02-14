@@ -51,7 +51,7 @@ function drawFuelChart() {
     height: '500px',
     titleTextStyle: {color: '#FFFFFF'},
     colors:['#008852','#005288'],
-    pointShape: 'star',
+    pointShape: {type: 'star', fill-color: '#ffffff'},
     chartArea: {'backgroundColor':'#181c1f', left: '5%', top: '5%', width: '90%', height: '90%'},
     backgroundColor: '#181c1f',
     legend: {position: 'top', titleTextStyle: {color: '#FFFFFF'}, textStyle:{color:'#FFFFFF'}},
