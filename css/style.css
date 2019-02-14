@@ -79,6 +79,13 @@ section {
 	margin: 24px;
 }
 
+#chart_speed p,
+#chart_fuel p,
+#chart_occupation p {
+	margin-left: 5%;
+	color: #FFFFFF;
+}
+
 #spacex-logo {
 	width: 264px;
 }
