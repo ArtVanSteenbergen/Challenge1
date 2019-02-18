@@ -62,16 +62,19 @@ section {
 #chart_speed {
 	grid-area: speed;
 	background: #181C1F;
+	border-bottom: 2px solid #ff7f2a;
 }
 
 #chart_fuel {
 	grid-area: fuel;
 	background: #181C1F;
+	border-bottom: 2px solid #ff7f2a;
 }
 
 #chart_occupation {
 	grid-area: occupation;
 	background: #181C1F;
+	border-bottom: 2px solid #ff7f2a;
 }
 
 #occupy-mars{
@@ -96,6 +99,12 @@ section {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 12px;
 		padding: 12px;
+	}
+
+	#chart_fuel,
+	#chart_speed,
+	#chart_occupation {
+		border-bottom: none;
 	}
 
 }
