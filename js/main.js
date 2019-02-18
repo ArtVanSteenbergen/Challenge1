@@ -27,10 +27,6 @@ function drawSpeedChart() {
     hAxis: {title: 'Month',  titleTextStyle: {color: '#FFFFFF'}, textStyle:{color:'#FFFFFF'},textPosition: 'in'},
     vAxis: {title: 'Speed in km/h',format:'short',  titleTextStyle: {color: '#FFFFFF'}, textStyle:{color:'#FFFFFF'},textPosition: 'in'},
     dataOpacity: 1,
-    animation: {
-      duration: 1000,
-      startup: false
-    }
   }
   var chart = new google.visualization.LineChart(document.getElementById('speed'));
   chart.draw(data, options);
@@ -92,10 +88,6 @@ function drawOccupationChart() {
     vAxis: {title: 'Fuel',format:'short', minValue: 0,  titleTextStyle: {color: '#FFFFFF'}, textStyle:{color:'#FFFFFF'},textPosition: 'in'},
     dataOpacity: 1,
     pieSliceBorderColor : '#181C1F',
-    animation: {
-      duration: 1000,
-      startup: false
-    }
   }
   var chart = new google.visualization.PieChart(document.getElementById('occupation'));
   chart.draw(data, options);
