@@ -123,8 +123,9 @@ section {
 
 	h1 {font-size: 32px;}
 	section {
-		grid-template-areas: "time speed""fuel occupation";
+		grid-template-areas: "time time""speed fuel""occupation .";
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
 		grid-gap: 12px;
 		padding: 12px;
 	}
@@ -172,22 +173,22 @@ section {
 }
 
 @keyframes insetBoxShadowGreen {
-	0% {box-shadow: inset 0px 0px 0px 0px #008852}
+	0% {box-shadow: inset 0px 0px 0px -4px #008852}
 	50% {box-shadow: inset 0px -20px 30px -20px #008852}
-	100% {box-shadow: inset 0px 0px 0px 0px #008852}
+	100% {box-shadow: inset 0px 0px 0px -4px #008852}
 }
 @keyframes insetBoxShadowBlue {
-	0% {box-shadow: inset 0px 0px 0px 0px #005288}
+	0% {box-shadow: inset 0px 0px 0px -4px #005288}
 	50% {box-shadow: inset 0px -20px 30px -20px #005288}
-	100% {box-shadow: inset 0px 0px 0px 0px #005288}
+	100% {box-shadow: inset 0px 0px 0px -4px #005288}
 }
 @keyframes insetBoxShadowOrange {
-	0% {box-shadow: inset 0px 0px 0px 0px #ff7f2a}
+	0% {box-shadow: inset 0px 0px 0px -4px #ff7f2a}
 	50% {box-shadow: inset 0px -20px 30px -20px #ff7f2a}
-	100% {box-shadow: inset 0px 0px 0px 0px #ff7f2a}
+	100% {box-shadow: inset 0px 0px 0px -4px #ff7f2a}
 }
 @keyframes insetBoxShadowWhite {
-	0% {box-shadow: inset 0px 0px 0px 0px #ffffff}
+	0% {box-shadow: inset 0px 0px 0px -4px #ffffff}
 	50% {box-shadow: inset 0px -20px 30px -20px #ffffff}
-	100% {box-shadow: inset 0px 0px 0px 0px #ffffff}
+	100% {box-shadow: inset 0px 0px 0px -4px #ffffff}
 }
