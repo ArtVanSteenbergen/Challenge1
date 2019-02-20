@@ -11,8 +11,7 @@ body {
 }
 
 html {
-	background: url(../img/mars.png) no-repeat bottom right, url(../img/space.jpg) no-repeat center center;
-	background-size: 25em, cover;
+	background: #181C1F;
 }
 
 main {
@@ -41,7 +40,7 @@ h1 {
 section {
 	display: grid;
 	grid-area: section;
-	grid-template-areas: "speed""fuel""occupation""time";
+	grid-template-areas: "time""speed""fuel""occupation";
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 0px;
 	padding:0px;
@@ -53,6 +52,8 @@ section {
 	color: #FFFFFF;
 	padding: 24px;
 	background: #181C1F;
+	border-bottom: 2px solid #ff7f2a;
+	padding-bottom: 16px;
 }
 
 #speed, #fuel, #occupation {
@@ -64,30 +65,26 @@ section {
 	grid-area: speed;
 	background: #181C1F;
 	border-bottom: 2px solid #ff7f2a;
+	padding-bottom: 16px;
 }
 
 #chart_fuel {
 	grid-area: fuel;
 	background: #181C1F;
 	border-bottom: 2px solid #ff7f2a;
+	padding-bottom: 16px;
 }
 
 #chart_occupation {
 	grid-area: occupation;
 	background: #181C1F;
 	border-bottom: 2px solid #ff7f2a;
+	padding-bottom: 16px;
 }
 
 #occupy-mars{
 	width: 128px;
 	margin: 24px;
-}
-
-#chart_speed p,
-#chart_fuel p,
-#chart_occupation p {
-	margin-left: 5%;
-	color: #FFFFFF;
 }
 
 #spacex-logo {
@@ -96,27 +93,70 @@ section {
 
 @media screen and (min-width: 460px) {
 	h1 {font-size: 24px;}
+	header, footer {
+		border-left: 8px solid grey;
+	}
+	#chart_fuel {
+		border-left: 8px solid #008852;
+		border-bottom: none;
+	}
+	#chart_speed {
+		border-left: 8px solid #005288;
+		border-bottom: none;
+	}
+	#chart_occupation {
+		border-left: 8px solid #ff7f2a;
+		border-bottom: none;
+	}
+	#time {
+		border-left: 8px solid #ffffff;
+		border-bottom: none;
+	}
 }
 
 
 @media screen and (min-width: 672px) {
+	html {
+		background: url(../img/space.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
 	h1 {font-size: 32px;}
 	section {
-		grid-template-areas: "speed fuel""occupation time";
+		grid-template-areas: "time speed""fuel occupation";
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 12px;
 		padding: 12px;
 	}
 
-	#chart_fuel,
-	#chart_speed,
-	#chart_occupation {
-		border-bottom: none;
+	#chart_fuel {
+		border-bottom: 4px solid #008852;
+		border-left: none;
 	}
+	#chart_speed {
+		border-bottom: 4px solid #005288;
+		border-left: none;
+	}
+	#chart_occupation {
+		border-bottom: 4px solid #ff7f2a;
+		border-left: none;
+	}
+	#time {
+		border-bottom: 4px solid #ffffff;
+		border-left: none;
+	}
+	header, footer {
+		border-left: none;
+	}
+
 
 }
 
 @media screen and (min-width: 1400px) {
+	html {
+		background: url(../img/mars.png) no-repeat bottom right, url(../img/space.jpg) no-repeat center center;
+		background-size: 25em, cover;
+	}
 	h1 {font-size: 48px;}
 	section {
 		grid-template-areas: "speed speed fuel fuel""occupation time time .";
@@ -124,4 +164,5 @@ section {
 		grid-gap: 24px;
 		padding: 24px;
 	}
+
 }
