@@ -130,19 +130,23 @@ section {
 	}
 
 	#chart_fuel {
-		border-bottom: 4px solid #008852;
+		/*border-bottom: 4px solid #008852;*/
+		animation: 7s ease-in-out -2s insetBoxShadowGreen infinite;
 		border-left: none;
 	}
 	#chart_speed {
-		border-bottom: 4px solid #005288;
+		/*border-bottom: 4px solid #005288;*/
+		animation: 5s ease-in-out -4s insetBoxShadowBlue infinite;
 		border-left: none;
 	}
 	#chart_occupation {
-		border-bottom: 4px solid #ff7f2a;
+		/*border-bottom: 4px solid #ff7f2a;*/
+		animation: 6s ease-in-out -6s insetBoxShadowOrange infinite;
 		border-left: none;
 	}
 	#time {
-		border-bottom: 4px solid #ffffff;
+		/*border-bottom: 4px solid #ffffff;*/
+		animation: 8s ease-in-out -8s insetBoxShadowWhite infinite;
 		border-left: none;
 	}
 	header, footer {
@@ -165,4 +169,25 @@ section {
 		padding: 24px;
 	}
 
+}
+
+@keyframes insetBoxShadowGreen {
+	0% {box-shadow: inset 0px 0px 0px 0px #008852}
+	50% {box-shadow: inset 0px -20px 30px -20px #008852}
+	100% {box-shadow: inset 0px 0px 0px 0px #008852}
+}
+@keyframes insetBoxShadowBlue {
+	0% {box-shadow: inset 0px 0px 0px 0px #005288}
+	50% {box-shadow: inset 0px -20px 30px -20px #005288}
+	100% {box-shadow: inset 0px 0px 0px 0px #005288}
+}
+@keyframes insetBoxShadowOrange {
+	0% {box-shadow: inset 0px 0px 0px 0px #ff7f2a}
+	50% {box-shadow: inset 0px -20px 30px -20px #ff7f2a}
+	100% {box-shadow: inset 0px 0px 0px 0px #ff7f2a}
+}
+@keyframes insetBoxShadowWhite {
+	0% {box-shadow: inset 0px 0px 0px 0px #ffffff}
+	50% {box-shadow: inset 0px -20px 30px -20px #ffffff}
+	100% {box-shadow: inset 0px 0px 0px 0px #ffffff}
 }
